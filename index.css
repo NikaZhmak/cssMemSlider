@@ -166,13 +166,7 @@
 
    transition: 0.7s;
   }
-/* 
-label:hover{
-  transition: 0.5s;
-  cursor: pointer;
-  border: none;
-  background-color: rgb(250, 242, 231);
-} */
+
 
 .button:hover{
   transition: 0.5s;
@@ -201,17 +195,15 @@ label:hover{
   /* height: 1rem; */
   overflow: hidden;
   justify-content: flex-end;
-  /* background-color: antiquewhite; */
+
 }
 
 
 .texts{
   display: none;
   position: relative;
-  /* width: 40%;
-  background-color: aqua; */
+  
   opacity: 0;
-  /* visibility: hidden; */
 
   
 }
