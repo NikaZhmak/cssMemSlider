@@ -120,12 +120,11 @@
  #r1:checked ~ .slides > .slide1{
      opacity: 1;  
      transition: opacity linear 0.4s;}  
-  
+   
   #r2:checked ~ .slides > .slide2{    
      opacity: 1;   
      transition: opacity linear 0.4s; 
-  }
-  
+  } 
   #r3:checked ~ .slides > .slide3{   
     opacity: 1;
    transition:  opacity linear 0.4s; 
@@ -167,17 +166,27 @@
 
    transition: 0.7s;
   }
-
+/* 
 label:hover{
+  transition: 0.5s;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(250, 242, 231);
+} */
+
+.button:hover{
   transition: 0.5s;
   cursor: pointer;
   border: none;
   background-color: rgb(250, 242, 231);
 }
 
-label:checked{
-  background-color: white;
-}
+
+
+ 
+
+
+
   
 
 
@@ -187,56 +196,50 @@ label:checked{
 
 /* ------------------------------------------------------------------------------------------------------------------------------------ */
 
-.texts{
-  position: relative;
+.text_wrapper{
+  
+  /* height: 1rem; */
+  overflow: hidden;
+  justify-content: flex-end;
+  /* background-color: antiquewhite; */
 }
 
-                .text {
-                   color: black;
-                   display: none; 
 
-                }
-                
+.texts{
+  display: none;
+  position: relative;
+  /* width: 40%;
+  background-color: aqua; */
+  opacity: 0;
+  /* visibility: hidden; */
+
+  
+}
+
+              
 
 
-  #r1:checked ~.text{
-    display: block;
-
-    /* visibility: visible; */
-    /* /* opacity: 1;   */
-    /* transition: opacity ease 0.8s;  */
-    /* z-index: 3; */
-    /* background-color: purple; */
-  }
-     
+   /* #r1:checked ~ .text_wrapper > .texts > .text1{
    
-  #r2:checked ~ .texts> .text2{
-    /* display: block;
-    color: black; */
-    opacity: 1;  
-    /* z-index: 5; */
-    /* visibility: visible; */
-    /* background-color: pink; */
+    
+  }     
+   
+  #r2:checked ~ .text_wrapper> .texts> {
+   
+    transform: translateY(20px);
    }
    
    #r3:checked ~ .texts > .text3 {
-    /* display:block;
-    color: black;
-    /* visibility: visible; */
-     opacity: 1; 
-     
-     /* z-index: 7; */
-     /* background-color: blue; */
+    opacity: 1;
+    visibility: visible;
    }
    
    #r4:checked ~  .texts > .text4{
-     
-    opacity: 1; 
-    /* background-color: red; */
-    /* z-index: 8; */
+    opacity: 1;
+    visibility: visible;
     
    }
-   
+    */
 
 /* -------------------------------------------------------------------------------------------------------------- */
 
@@ -256,7 +259,7 @@ label:checked{
   
 }
 
-@media (min-width:390px) {
+@media (min-width: 320px) and (max-width:767px) {
   .wrapper{
     width:80%;
     height: 15rem;
@@ -268,5 +271,10 @@ label:checked{
   .buttons{   
     align-self: center;
   }
-  
+  .button{
+    
+    width: 25px;
+    height: 7px;    
+    
+  }
 }
